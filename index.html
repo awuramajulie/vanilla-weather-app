@@ -12,19 +12,27 @@
 </head>
 <body>
    <div class="container">
+    <div class="weather-app-wrapper"> 
     <div class="weather-app"> 
-    <h1>
-        New York
-    </h1>
-    <ul>
-        <li>Friday 05:00</li>
-        <li>Clear</li>
-    </ul>
+        <div class="overview">
+            <h1>
+                New York
+            </h1>
+            <ul>
+                <li>Friday 05:00</li>
+                <li>Clear</li>
+            </ul>
+        </div>
+   
     <div class="row">
         <div class="col-6">
-            <span>
-                <i class="fa-solid fa-sun sunny"></i>
-            </span> 12°C|°F
+                <span>
+                    <i class="fa-solid fa-sun sunny"></i>
+                </span>
+            
+            <span class="current" id="current-temp" >
+               <strong> 27</strong> <small class="units"> <span class="celsius">°C | <span id="fanhren"><a href="#">°F</a></span></span></small>
+            </span>
         </div>
         <div class="col-6">
             <ul>
@@ -36,7 +44,7 @@
     </div>
 </div>
     <small> <a href="https://github.com/awuramajulie/vanilla-weather-app">Open-source code</a>by Juliet Sarpong from SheCodes</small>
-   
+</div>
 </div>
 
     <script src="script.js" ></script>
