@@ -35,6 +35,12 @@ li {
     text-transform: capitalize;
   }
 
+  img{
+    width: 100px;
+   position: relative;
+   top: -15px;
+  }
+
 .weather-app {
     border: 1px solid #dadde1;
     padding: 20px;
