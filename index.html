@@ -17,7 +17,7 @@
         <div class="row"> 
             <div class="col-9">
         <form id="search-form" class="mb-3" > 
-            <input type="search" placeholder="Type a city" class="form-control" id="city-input" >
+            <input type="search" placeholder="Type a city" class="form-control" id="city-input" autocomplete="off" >
         </div>
         <div class="col-3">  <input type="submit" placeholder="submit" value="Search" class="btn btn-primary w-100" >
         </form>
@@ -35,13 +35,15 @@
    
     <div class="row">
         <div class="col-6">
-                <span>  <!--  <i class="fa-solid fa-sun sunny"></i> -->
+<div class="weather-temperature">
+<span>  
                   <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="icon" id="icon" >
                 </span>
             
             <span class="current" id="current-temp" >
-               <strong id="temperature" > 27</strong> <small class="units"> <span class="celsius">°C | <span id="fanhren"><a href="#">°F</a></span></span></small>
+               <strong id="temperature" > 27</strong> <small class="units"> <span class="celsius"><a href="#" id="celsius-link" class="active" >°C</a>|<a href="#" id="fahrenheit-link">°F</a></span></small>
             </span>
+        </div>
         </div>
         <div class="col-6">
             <ul>
@@ -50,7 +52,8 @@
                 <li>Wind:<span id="wind"></span> km/h</li>
             </ul>
         </div>
-    </div>
+        </div>
+   
 </div>
     <small> <a href="https://github.com/awuramajulie/vanilla-weather-app">Open-source code</a>by Juliet Sarpong from SheCodes</small>
 </div>
